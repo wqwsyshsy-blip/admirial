@@ -1,0 +1,7 @@
+{
+  "name": "Copy of مباحث WORKING",
+  "description": "تطبيق رصد وتحليل بيانات لاعبي روبلوكس عبر المعرف أو الاسم أو الرابط أو الصور.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

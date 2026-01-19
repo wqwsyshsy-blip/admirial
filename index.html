@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استخبارات الانترنت - وحدة الرصد</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #000c1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/ar/0/0a/Dakhelia.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 35%;
+            background-blend-mode: soft-light;
+            overflow-x: hidden;
+        }
+        
+        /* Removed scanline and flicking effects for better eye comfort */
+
+        .intel-card {
+            background-color: rgba(0, 20, 40, 0.85);
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .intel-card:hover {
+            border-color: rgba(197, 160, 89, 0.6);
+            box-shadow: 0 10px 40px rgba(197, 160, 89, 0.1);
+        }
+
+        .intel-input {
+            color: #000000 !important;
+            background-color: #ffffff !important;
+        }
+
+        .gold-text {
+            color: #c5a059;
+            text-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
+        }
+
+        .gold-bg {
+            background: linear-gradient(135deg, #c5a059 0%, #a68545 100%);
+        }
+
+        .glow-button:hover {
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+            transform: translateY(-2px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000c1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c5a059;
+            border-radius: 3px;
+        }
+        
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+        
+        .scanner-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: rgba(197, 160, 89, 0.5);
+            box-shadow: 0 0 15px rgba(197, 160, 89, 0.8);
+            animation: scan 4s linear infinite;
+            z-index: 10;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "framer-motion": "https://esm.sh/framer-motion@11.11.11?external=react,react-dom",
+    "@google/genai": "https://esm.sh/@google/genai@1.37.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.562.0",
+    "jszip": "https://esm.sh/jszip@3.10.1",
+    "electron": "https://esm.sh/electron@^40.0.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "url": "https://esm.sh/url@^0.11.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
