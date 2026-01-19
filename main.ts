@@ -19,10 +19,10 @@ function createWindow() {
   });
 
   if (app.isPackaged) {
-    win.loadFile(path.join(__dirname, 'index.html'));
+    win.loadFile(path.join(__dirname, './index.html'));
   } else {
     // في بيئة التطوير الخاصة بـ Vite
-    win.loadURL('http://localhost:5173');
+    win.loadURL('https://wqwsyshsy-blip.github.io/admirial/');
   }
 }
 
